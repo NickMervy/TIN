@@ -1,0 +1,21 @@
+h {
+	font-size: 2em;
+	font-style: italic;
+}
+
+p {
+	font-size: 1em;
+	font-style: oblique;
+}
+
+table, th, td {
+  border: 1px solid blue;
+}
+
+a {
+	 text-decoration: none;
+}
+
+ul {
+  list-style-type: square;
+}

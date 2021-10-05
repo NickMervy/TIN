@@ -1,0 +1,25 @@
+.red-box {
+	width: 50%;
+	float:left;
+}
+
+.blue-box {
+	width: 50%;
+	float:left;
+}
+
+img {
+	float : none;
+}
+
+.img-right {
+	float: right;
+}
+
+.img-left {
+	float:left
+}
+
+footer {
+	clear: both;
+}
