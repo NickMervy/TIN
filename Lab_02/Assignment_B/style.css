@@ -1,0 +1,13 @@
+html * {
+    font-size: large;
+    font-style: italic;
+}
+
+input.mandatory {
+    color: green;
+    border-color: red;
+}
+
+label.mandatory {
+    color: red;
+}
