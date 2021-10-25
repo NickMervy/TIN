@@ -1,0 +1,94 @@
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrapper>* {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.header {
+    background: tomato;
+}
+
+.footer {
+    background: lightgreen;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    text-align: left;
+    background: deepskyblue;
+}
+
+.main div {
+    padding: 4px;
+}
+
+.main img {
+    margin-right: 4px;
+    float: left;
+}
+
+.main .quote {
+    float: right;
+    color: red;
+}
+
+.aside-1 {
+    background: gold;
+}
+
+
+.aside-1 img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media all and (min-width: 600px) {
+    .aside {
+        flex: 1 0 0;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .main {
+        flex: 3 0px;
+    }
+
+    .aside-1 {
+        order: 1;
+    }
+
+    .main {
+        order: 2;
+    }
+
+    .aside-2 {
+        order: 3;
+    }
+
+    .footer {
+        order: 4;
+    }
+}
+
+body {
+    padding: 2em;
+}
+
+.header {
+    text-align: center;
+    position: relative;
+}
+
+.header img {
+    margin-top: 2%;
+    border-radius: 40px;
+    transform: rotate(10deg);
+    filter: drop-shadow(5px 5px 2px rgb(0, 0, 0))
+}
