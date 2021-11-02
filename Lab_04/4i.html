@@ -1,0 +1,22 @@
+<script>
+
+function amount2Coins(n,arr) {
+  if(n === 0) {
+    return [];
+  }
+  else {
+    if(n >= arr[0]) {
+      let t = n - arr[0];
+      return [arr[0]].concat(amount2Coins(t,arr));
+    }
+    else {
+      arr.shift();
+      return amount2Coins(n,arr);
+    } 
+  }
+}
+
+let result = amount2Coins(46,[25,10,5,2,1]);
+console.log(result);
+
+</script>

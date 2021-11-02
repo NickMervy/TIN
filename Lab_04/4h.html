@@ -1,0 +1,26 @@
+<script>
+
+function secondMax(arr){ 
+    let max = Math.max.apply(null, arr);
+    arr.splice(arr.indexOf(max), 1);
+    return Math.max.apply(null, arr);
+};
+
+function secondMin(arr){ 
+    let max = Math.min.apply(null, arr);
+    arr.splice(arr.indexOf(max), 1);
+    return Math.min.apply(null, arr);
+};
+
+function second(arr) {
+	return [secondMax(arr), secondMin(arr)];
+}
+
+let arr = [1, 2, 3, 4, 5, 10, 23, 0, -2];
+let answers = second(arr);
+const max = answers[0],
+			min = answers[1];
+
+console.log("Max: " + max + " Min: " + min);
+
+</script>
