@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script>
+
+        function convert() {
+            let inputC = document.getElementById("inputC");
+            let outputF = document.getElementById("outputF");
+            let valueC = parseInt(inputC.value);
+
+            outputF.value = (valueC * 9.0 / 5) + 32;
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <form action="">
+        <fieldset>
+            <label>Enter Celsius</label>
+            <input type="text" id="inputC" />
+            <button type="button" onclick="convert()">
+                Convert
+            </button>
+        </fieldset>
+    </form>
+    <p> 
+        <output id="outputF"></output>
+    </p>
+</body>
+
+</html>
