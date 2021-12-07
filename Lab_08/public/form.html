@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script>
+        function adjust_textarea(h) {
+            h.style.height = "20px";
+            h.style.height = (h.scrollHeight) + "px";
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <title>Lab 8</title>
+</head>
+
+<body>
+<section>
+    <br>
+    <br>
+    <form method="POST">
+
+        <label class="required">Text input field</label>
+        <input type="text" name="textInput" required>
+
+
+        <br>
+        <br>
+
+
+        <label class="required">Password field</label>
+        <input type="password" name="passwordExample" required>
+
+
+        <br>
+        <br>
+
+
+        <label>Text area</label>
+        <textarea name="textareaExample" onkeyup="adjust_textarea(this)">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </textarea>
+
+
+        <br>
+        <br>
+
+        <button value="Submit" formaction="/formdata">FORMDATA</button>
+        <button value="JSON" formaction="/jsondata">JSONDATA</button>
+
+    </form>
+
+</section>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<div class="container">
+    <ul>
+        <% for (var key in data) { %>
+            <li>
+                <h3>
+                    <%= key %>:
+                    <span><%= data[key] %></span>
+                </h3>
+            </li>
+        <% } %>
+    </ul>
+</div>
+</body>
+</html>
