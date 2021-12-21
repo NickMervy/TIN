@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Lab_09</title>
+    <script defer src="../js/index.js"></script>
+</head>
+
+<h1>
+    Lab_09
+</h1>
+
+<body>
+    <input type='text' id='num1' />
+    <input type='text' id='num2' />
+    <label for='ops'>Choose an operation</label>
+    <select id='opcode'>
+        <option value='add'>Add</option>
+        <option value='sub'>Sub</option>
+        <option value='mul'>Mul</option>
+        <option value='div'>Div</option>
+    </select>
+
+    <button type='button' value='Send' name='Send' onclick='send()'>
+        Send
+    </button>
+
+    <p>
+        Result: <output id="result"></output>
+    </p>
+</body>
+
+</html>
